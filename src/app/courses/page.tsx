@@ -8,7 +8,7 @@ import courseData from '@/data/music_courses.json'
 export default function Courses() {
   return (
     <div className="min-h-screen bg-black  py-12 pt-36">
-      <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">"All courses" ({courseData.courses.length})</h1>
+      <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">All courses ({courseData.courses.length})</h1>
       <div className="flex flex-wrap justify-center gap-5">
         {courseData.courses.map((course, index) => {
           return (<CardContainer className="inter-var" key={index}>
